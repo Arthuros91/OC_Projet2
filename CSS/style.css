@@ -1,0 +1,26 @@
+/* Header */
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner_img{
+    width: 61.09px;
+    height: 19px;
+}
+
+#banner_nav{
+    display:flex;
+    
+}
+
+#banner_items{
+    display:flex;
+    list-style-type: none;
+}
+
+#banner_item{
+    margin: 20px;
+}
+
