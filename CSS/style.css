@@ -1,4 +1,13 @@
-/* Header */
+/* GENERAL IDENTIFIERS */
+
+
+li{
+    list-style-type: none;
+
+}
+
+
+/* HEADER */
 
 #banner{
     display: flex;
@@ -8,19 +17,86 @@
 #banner_img{
     width: 61.09px;
     height: 19px;
+    margin: 20px;
 }
 
 #banner_nav{
-    display:flex;
-    
+    border: 3px solid black;
+
 }
 
 #banner_items{
     display:flex;
-    list-style-type: none;
+    
 }
 
-#banner_item{
+.banner_item{
     margin: 20px;
 }
 
+/* PANEL_SEARCH */
+
+#search_form{
+    display: flex;
+    justify-content: start;
+}
+
+#filter{
+    display:flex;
+    flex-direction: row;
+    margin:20px;
+}
+#filter_group_icon{
+    display:flex;
+    
+}
+
+.filter_icon{
+    margin:20px;
+    border: 2px rgb(121, 121, 243) solid;
+    padding: 10px;
+    border-radius:20px; 
+}
+
+
+/* LOCATION */
+#location{
+    display:flex;
+}
+    /* Hébergement */
+
+.logement_list{
+    display:flex;
+}
+
+.logement_list_card{
+    border:2px solid blue;
+    margin:20px;
+}
+
+.card_img{
+    width: 246px;
+    height: 124px;
+    object-fit: contain;
+}
+
+    /* Popular List */
+
+#popular_title{
+    display:flex;
+    border:1px red solid;
+}
+
+.fa-chart-line{
+    margin:25px;
+}
+
+.popular_card{
+    display:flex;
+    border: 1px purple solid;
+    margin:20px;
+}
+.popular_card_img{
+    width:137px;
+    height:144px;
+}
