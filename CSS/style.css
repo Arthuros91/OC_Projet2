@@ -1,5 +1,9 @@
 /* GENERAL IDENTIFIERS */
 
+header{
+    color:blue;
+}
+
 body{
     max-width: 1400px;
     font-family: Raleway;
@@ -152,51 +156,64 @@ footer{
 
 /* MEDIA QUERIES */
 
-    /* Desktop */
-
-@media screen and (min-width: 992px) {
-    /* GENERAL IDENTIFIERS */
-    /* HEADER */
-    /* PANEL_SEARCH */
-    /* LOCATION */
-        /* Hébergement */
-        /* Popular List */
-    /* ACTIVITIES */
-    /* FOOTER */
-    header{
-        color:blue;
-    }
-
-
-}
-
-
     /* Tablets */ 
 
 @media screen and (min-width:768px) and (max-width:991px) {
+    
     /* GENERAL IDENTIFIERS */
-    /* HEADER */
-    /* PANEL_SEARCH */
-    /* LOCATION */
-        /* Hébergement */
-        /* Popular List */
-    /* ACTIVITIES */
-    /* FOOTER */
+    
     header{
-        color:red
+        color:red;
+        
     }
+
+    /* HEADER */
+
+    /* PANEL_SEARCH */
+
+    /* LOCATION */
+
+        
+        /* Hébergement */
+        
+        /* Popular List */
+    
+    /* ACTIVITIES */
+
+    /* FOOTER */
+
+
 }
 
 
     /* Phones */
 
 @media screen and (max-width:767px) {
+    
     /* GENERAL IDENTIFIERS */
+
+    header{
+        color:green;
+    }
+    
     /* HEADER */
+    
     /* PANEL_SEARCH */
+    
     /* LOCATION */
+        
         /* Hébergement */
+    
+        .logement_list{
+            display: flex;
+            flex-direction:column;
+        }
+    
         /* Popular List */
+    
     /* ACTIVITIES */
+
     /* FOOTER */
+
+
 }
