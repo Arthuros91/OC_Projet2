@@ -13,7 +13,7 @@
 
         <header id="banner">
             <p>
-                <img id="banner_img" src="./Images/logo/Booki@3x.png" alt="banner-image">
+                <img id="banner_logo" src="./Images/logo/Booki@3x.png" alt="banner-image">
             </p>
             <nav id="banner_nav">
                 <ul id="banner_items">
@@ -27,19 +27,19 @@
 
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-            <quote>En plein centre-ville ou en pleine nature</quote>
+            <quote id="search_quote">En plein centre-ville ou en pleine nature</quote>
             <div id="search_form">
-                <i class="fa-solid fa-location-dot"></i>
-                <form><textarea name="town_search" id="" cols="20" rows="1">Marseille, France</textarea></form>
-                <button>Rechercher</button>
+                <div id="search_icon"><i class="fa-solid fa-location-dot"></i></div>
+                <form><textarea class="town_search" name="town_search" id="" cols="20" rows="1">Marseille, France</textarea></form>
+                <button><span id="button_text">Rechercher</span></button>
             </div>
             <div id="filter">
                 <div>Filtres</div>
                 <ul id="filter_group_icon">
-                    <li class="filter_icon"><i class="fa-solid fa-money-bill-wave" ></i> Economique</li>
-                    <li class="filter_icon"><i class="fa-solid fa-child"></i> Familial</li>
-                    <li class="filter_icon"><i class="fa-solid fa-heart"></i> Romantique</li>
-                    <li class="filter_icon"><i class="fa-solid fa-dog"></i> Animaux autorisés</li>
+                    <li class="filter_icon"><i class="fa-solid fa-money-bill-wave"></i><span class="filter_text"> Economique</span></li>
+                    <li class="filter_icon"><i class="fa-solid fa-child"></i><span class="filter_text"> Familial</span></li>
+                    <li class="filter_icon"><i class="fa-solid fa-heart"></i><span class="filter_text"> Romantique</span></li>
+                    <li class="filter_icon"><i class="fa-solid fa-dog"></i><span class="filter_text"> Animaux autorisés</span></li>
                 </ul>
             </div>
             <quote> 
@@ -54,7 +54,7 @@
             <!--Hebergements panel -->
             
             <div id="hébergement">
-                <h2>Hébergements à Marseille</h2>
+                <h1>Hébergements à Marseille<h1>
                 <div class="logement_list">
                     <div class="logement_list_card">
                         <img class="card_img" src="./Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image">
@@ -132,7 +132,7 @@
             
             <div id="popular">
                 <div id="popular_title">
-                    <h2>Les plus populaires</h2>
+                    <h1>Les plus populaires<h1>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div id="popular_list">
@@ -182,7 +182,7 @@
         <!-- ACTIVITIES PANEL -->
 
         <section id="activities">
-            <h2>Activités à Marseille</h2>
+            <h1>Activités à Marseille<h1>
             <div id="activities_list">
                 <div class="activities_list_card">
                     <img class="activities_list_card_img" src="./Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image">

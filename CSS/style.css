@@ -7,6 +7,29 @@ header{
 body{
     max-width: 1400px;
     font-family: Raleway;
+    margin: 0px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: Raleway-bold;
+    font-size:22px;
+    font-weight: bold;
+}
+quote{
+    font-size:16px;
+}
+
+button{
+    font-size:18px;
+    color:white;
+    background-color:#0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
 }
 
 li{
@@ -14,10 +37,7 @@ li{
 
 }
 
-footer{
-    display:flex;
-    justify-content: space-around;
-}
+
 
 /* HEADER */
 
@@ -26,52 +46,108 @@ footer{
     justify-content: space-between;
 }
 
-#banner_img{
+#banner_logo{
     width: 61.09px;
     height: 19px;
-    margin: 20px;
+    margin: 44px 55px;
+    border: 3px solid black;
 }
 
 #banner_nav{
     border: 3px solid black;
+    margin: 0px;
+    padding: 0px;
 
 }
 
 #banner_items{
     display:flex;
+    padding:0px;
     
 }
 
 .banner_item{
-    margin: 20px;
+    padding-top: 48px;
 }
+
+.banner_item:hover{
+    border-top: 2px #0065FC solid;
+}
+
 
 /* PANEL_SEARCH */
 
+    /*Search panel */
+#search{
+    margin:55px;
+}
 #search_form{
     display: flex;
     justify-content: start;
 }
 
+#search_icon{
+    width:50px;
+    height:49px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.fa-location-dot{
+    margin:16px 18px 15px 18px
+}
+
+.town_search{
+    font-family: Raleway-bold;
+    font-size:18px;
+}
+
+#button_text{
+    margin: 14px 16px;
+}
+
+    /* Filters */
+
 #filter{
     display:flex;
     flex-direction: row;
     margin:20px;
+    font-family: Raleway-bold;
+    font-size:18px;
 }
+
 #filter_group_icon{
     display:flex;
+    font-size:17px;
     
 }
 
 .filter_icon{
+    color:#0065FC;
     margin:20px;
-    border: 2px rgb(121, 121, 243) solid;
+    border: 2px grey solid;
     padding: 10px;
     border-radius:20px; 
 }
 
+.filter_icon:hover{
+    background-color:#DEEBFF;
+}
+
+.filter_text{
+    color:black;
+}
+
+.fa-info{
+    padding: 7px 10px;
+    margin:11px;
+    border: 1px grey solid;
+    border-radius: 100%;
+}
 
 /* LOCATION */
+
 #location{
     display:flex;
     justify-content: space-between;
@@ -153,6 +229,10 @@ footer{
     src: url(Raleway-VariableFont_wght.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: Raleway-bold;
+    src: url(Raleway-Bold.ttf) format('truetype');
+}
 
 /* MEDIA QUERIES */
 
@@ -193,7 +273,7 @@ footer{
     /* GENERAL IDENTIFIERS */
 
     header{
-        color:green;
+        color:yellow;
     }
     
     /* HEADER */
