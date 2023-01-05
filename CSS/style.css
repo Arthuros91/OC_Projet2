@@ -5,7 +5,10 @@ li{
     list-style-type: none;
 
 }
-
+footer{
+    display:flex;
+    justify-content: space-around;
+}
 
 /* HEADER */
 
@@ -62,6 +65,7 @@ li{
 /* LOCATION */
 #location{
     display:flex;
+    justify-content: space-between;
 }
     /* Hébergement */
 
@@ -99,4 +103,29 @@ li{
 .popular_card_img{
     width:137px;
     height:144px;
+}
+
+/* ACTIVITIES */
+
+#activities_list{
+    display:flex;
+    
+}
+.activities_list_card{
+    margin:20px;
+}
+.activities_list_card_img{
+    width:302px;
+    height:444.51px;
+    border-radius: 20px;
+    object-fit: contain;
+    border: 1px solid red;
+}
+
+/* FOOTER */
+
+.footer_nav{
+    display:flex;
+    flex-direction:column;
+    
 }
