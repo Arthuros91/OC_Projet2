@@ -13,6 +13,8 @@ body{
 footer{
     display:flex;
     justify-content: space-around;
+    background: #F2F2F2;
+    padding-bottom:58px;
 }
 
 h1{
@@ -20,6 +22,29 @@ h1{
     font-size:22px;
     font-weight: bold;
 }
+
+h2{
+    font-size:18px;
+}
+
+h3{
+    font-size:16px;
+    margin: 4px 26px 9px 16px;
+}
+
+p{
+    font-family: Raleway;
+    font-size:14px;
+    margin:0px 16px;
+}
+
+input{
+    font-family: Raleway-bold;
+    font-size:18px;
+    height: 50px;
+    border: 1px #F2F2F2 solid;
+}
+
 quote{
     font-size:16px;
 }
@@ -46,28 +71,29 @@ li{
     justify-content: space-between;
 }
 
+#logo{
+    margin:0px;
+}
 #banner_logo{
     width: 61.09px;
     height: 19px;
     margin: 44px 55px;
-    border: 3px solid black;
 }
 
 #banner_nav{
-    border: 3px solid black;
-    margin: 0px;
+    margin: 0px ;
     padding: 0px;
-
 }
 
 #banner_items{
     display:flex;
     padding:0px;
-    
+    margin:0px; 
 }
 
 .banner_item{
     padding-top: 48px;
+    margin:0px 33px;
 }
 
 .banner_item:hover{
@@ -78,12 +104,24 @@ li{
 /* PANEL_SEARCH */
 
     /*Search panel */
+
 #search{
-    margin:55px;
+    margin:0px 55px;
 }
+
+#search_title{
+    margin-bottom: 8px;
+}
+
+#search_quote{
+    
+    
+}
+
 #search_form{
     display: flex;
     justify-content: start;
+    margin-top:20px;
 }
 
 #search_icon{
@@ -98,10 +136,7 @@ li{
     margin:16px 18px 15px 18px
 }
 
-.town_search{
-    font-family: Raleway-bold;
-    font-size:18px;
-}
+
 
 #button_text{
     margin: 14px 16px;
@@ -112,23 +147,36 @@ li{
 #filter{
     display:flex;
     flex-direction: row;
-    margin:20px;
     font-family: Raleway-bold;
     font-size:18px;
+    padding:0px;
+}
+
+#filter_text{
+    text-align: center;
+    border: 1px solid blue;
+}
+
+#filter_title{
+    height:21px;
+    margin-top:46px;
+
 }
 
 #filter_group_icon{
     display:flex;
     font-size:17px;
+    margin:0px;
     
 }
 
 .filter_icon{
     color:#0065FC;
-    margin:20px;
+    margin:31px;
+    padding-left: 30px;
     border: 2px grey solid;
-    padding: 10px;
-    border-radius:20px; 
+    padding: 14px;
+    border-radius:25px; 
 }
 
 .filter_icon:hover{
@@ -137,30 +185,61 @@ li{
 
 .filter_text{
     color:black;
+    margin-left:10px;
 }
 
 .fa-info{
     padding: 7px 10px;
-    margin:11px;
+    margin:0px 11px 37px 0px;
     border: 1px grey solid;
     border-radius: 100%;
 }
 
 /* LOCATION */
 
+
 #location{
     display:flex;
     justify-content: space-between;
 }
-    /* Hébergement */
+
+.stars_group{
+    color:#0065FC;
+    height:0.75em;
+    margin-left:16px;
+}
+
+.fa-star{
+    width:12px;
+    height:12px;
+    
+}
+
+
+    /* Logement */
+
+#logement{
+    margin:0px 40px 60px 50px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+#logement_title{
+    margin:42px 0px 23px 40px;
+}
 
 .logement_list{
     display:flex;
+    margin:0px 40px;
 }
 
 .logement_list_card{
+    width:246px;
+    height:199px;
     border:2px solid blue;
-    margin:20px;
+    margin:0px 15.5px 30px 0px;
+    background: #FFFFFF;
+    border-radius: 20px;
 }
 
 .card_img{
@@ -171,12 +250,25 @@ li{
 
     /* Popular List */
 
-#popular_title{
+#popular{
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+#popular_title_box{
     display:flex;
-    border:1px red solid;
+}
+
+#popular_title{
+    
+    margin: 41px 0px 26px 37px;
+    
 }
 
 .fa-chart-line{
+    color:#0065FC;
+    width:18px;
+    height:15.75px;
     margin:25px;
 }
 
@@ -190,9 +282,7 @@ li{
     height:144px;
 }
 
-.stars_group{
-    color:#0065FC
-}
+
 
 
 /* ACTIVITIES */
