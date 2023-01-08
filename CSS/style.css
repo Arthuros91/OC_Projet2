@@ -1,9 +1,5 @@
 /* GENERAL IDENTIFIERS */
 
-header{
-    color:blue;
-}
-
 body{
     max-width: 1400px;
     font-family: Raleway;
@@ -62,7 +58,9 @@ li{
 
 }
 
-
+.fa-solid{
+    color:#0065FC;
+}
 
 /* HEADER */
 
@@ -133,7 +131,8 @@ li{
 }
 
 .fa-location-dot{
-    margin:16px 18px 15px 18px
+    margin:16px 18px 15px 18px;
+    color: black;
 }
 
 
@@ -245,7 +244,7 @@ li{
 .card_img{
     width: 246px;
     height: 124px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
     /* Popular List */
