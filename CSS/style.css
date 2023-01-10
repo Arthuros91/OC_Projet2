@@ -3,14 +3,15 @@
 body{
     max-width: 1400px;
     font-family: Raleway;
-    margin: 0px;
+    margin: 0%;
 }
 
 footer{
     display:flex;
     justify-content: space-around;
     background: #F2F2F2;
-    padding-bottom:58px;
+    padding-bottom:4%;
+    margin-top: 5%;
 }
 
 h1{
@@ -24,7 +25,7 @@ h2{
 
 h3{
     font-size:16px;
-    margin:0px;
+    margin:0%;
 }
 
 a{
@@ -35,14 +36,14 @@ a{
 p{
     font-family: Raleway;
     font-size:14px;
-    margin:9px 0px 0px 0px;
+    margin-top:2%;
     
 }
 
 input{
     font-family: Raleway-bold;
     font-size:18px;
-    height: 50px;
+    height: 150%;
     border: 1px #F2F2F2 solid;
 }
 
@@ -67,6 +68,7 @@ li{
     color:#0065FC;
 }
 
+
 /* HEADER */
 
 #banner{
@@ -75,28 +77,27 @@ li{
 }
 
 #logo{
-    margin:0px;
+    margin:0%;
 }
+
 #banner_logo{
     width: 61.09px;
     height: 19px;
-    margin: 44px 55px;
+    margin: 65% 100%;
 }
 
 #banner_nav{
-    margin: 0px ;
-    padding: 0px;
+    margin: 0% 10%;
+    padding: 0%;
 }
 
 #banner_items{
     display:flex;
-    padding:0px;
-    margin:0px; 
 }
 
 .banner_item{
-    padding-top: 48px;
-    margin:0px 33px;
+    padding-top: 25%;
+    margin:0% 20%;
 }
 
 .banner_item:hover{
@@ -119,7 +120,7 @@ li{
 #search_form{
     display: flex;
     justify-content: start;
-    margin-top:20px;
+    margin-top:2%;
 }
 
 #search_icon{
@@ -202,6 +203,9 @@ li{
     align-items: space-between;
 }
 
+.the5th{
+    color:grey;
+}
     /* Logement */
 
 #logement{
@@ -228,7 +232,7 @@ li{
     background: #FFFFFF;
     border-radius: 20px;
     padding:5px;
-    box-shadow: grey 1px 1px 3px ;
+    box-shadow: grey 1px 1px 5px ;
 }
 
 .card_img{
@@ -242,16 +246,11 @@ li{
     margin:4px 10px 11px 16px;
 }
 
-.fa-star{
-    width:12px;
-    height:12px;
-    
+#logement_text{
+    margin:5% 5%;
 }
 
-#logement_text{
-    margin:10%;
-}
-    
+
     /* Popular List */
 
 #popular{
@@ -262,6 +261,7 @@ li{
 
 #popular_title_box{
     display:flex;
+    flex:1;
 }
 
 #popular_title{    
@@ -275,34 +275,46 @@ li{
     margin:25px;
 }
 
+#popular_list{
+    display:flex;
+    flex-direction: column;
+    flex:2;
+}
+
 .popular_card{
     display:flex;
+    flex-direction: row;
+    flex:1;
     border-radius: 20px;
-    padding:5px;
+    padding:1%;
     background-color: white;
-    margin:10%;
-    width:343px;
-    height: 144px;
-    box-shadow: grey 1px 1px 3px;
+    margin:5% 10% 5% 10%;
+    box-shadow: grey 1px 1px 5px;
 }
+
 
 .popular_card_img{
     display:flex;
-    flex:2;
+    flex:1;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
+    width:40%;
 }
 
 .popular_card_description{
     display: flex;
-    flex:1;
     flex-direction: column;
-    margin: 5%;
+    margin: 3% 5%;
     flex:2;
+}
+
+.popular_card p {
+    margin: 5% 0% 5% 0%;
 }
 
 
 /* ACTIVITIES */
+
 #activities{
     margin:3%;
 }
@@ -325,17 +337,25 @@ li{
     border-radius: 5% 5% 0% 0%;
 }
 
-h3, .activities_list_card{
+.activities_list_card h3 {
     margin:5%;
 }
 
 
 /* FOOTER */
 
+.footer_list{
+
+}
+
 .footer_nav{
     display:flex;
     flex-direction:column;
     
+}
+
+.footer_nav a{
+    margin:2%;
 }
 
 
@@ -389,9 +409,7 @@ h3, .activities_list_card{
     
     /* GENERAL IDENTIFIERS */
 
-    header{
-        color:yellow;
-    }
+
     
     /* HEADER */
     
