@@ -16,7 +16,6 @@ footer{
 h1{
     font-family: Raleway-bold;
     font-size:22px;
-    font-weight: bold;
 }
 
 h2{
@@ -25,13 +24,19 @@ h2{
 
 h3{
     font-size:16px;
-    margin: 4px 26px 9px 16px;
+    margin:0px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
 }
 
 p{
     font-family: Raleway;
     font-size:14px;
-    margin:0px 16px;
+    margin:9px 0px 0px 0px;
+    
 }
 
 input{
@@ -111,11 +116,6 @@ li{
     margin-bottom: 8px;
 }
 
-#search_quote{
-    
-    
-}
-
 #search_form{
     display: flex;
     justify-content: start;
@@ -188,7 +188,7 @@ li{
 }
 
 .fa-info{
-    padding: 7px 10px;
+    padding: 5px 10px;
     margin:0px 11px 37px 0px;
     border: 1px grey solid;
     border-radius: 100%;
@@ -199,32 +199,21 @@ li{
 
 #location{
     display:flex;
-    justify-content: space-between;
+    align-items: space-between;
 }
-
-.stars_group{
-    color:#0065FC;
-    height:0.75em;
-    margin-left:16px;
-}
-
-.fa-star{
-    width:12px;
-    height:12px;
-    
-}
-
 
     /* Logement */
 
 #logement{
-    margin:0px 40px 60px 50px;
+    margin:0% 5% 0% 5%;
     background: #F2F2F2;
     border-radius: 20px;
+    flex:2;
 }
 
 #logement_title{
     margin:42px 0px 23px 40px;
+    display:flex;
 }
 
 .logement_list{
@@ -235,21 +224,38 @@ li{
 .logement_list_card{
     width:246px;
     height:199px;
-    border:2px solid blue;
     margin:0px 15.5px 30px 0px;
     background: #FFFFFF;
     border-radius: 20px;
+    padding:5px;
+    box-shadow: grey 1px 1px 3px ;
 }
 
 .card_img{
     width: 246px;
     height: 124px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
+.card_text{
+    margin:4px 10px 11px 16px;
+}
+
+.fa-star{
+    width:12px;
+    height:12px;
+    
+}
+
+#logement_text{
+    margin:10%;
+}
+    
     /* Popular List */
 
 #popular{
+    flex:1;
     background: #F2F2F2;
     border-radius: 20px;
 }
@@ -258,10 +264,8 @@ li{
     display:flex;
 }
 
-#popular_title{
-    
-    margin: 41px 0px 26px 37px;
-    
+#popular_title{    
+    margin: 41px 0px 26px 37px;   
 }
 
 .fa-chart-line{
@@ -273,32 +277,56 @@ li{
 
 .popular_card{
     display:flex;
-    border: 1px purple solid;
-    margin:20px;
+    border-radius: 20px;
+    padding:5px;
+    background-color: white;
+    margin:10%;
+    width:343px;
+    height: 144px;
+    box-shadow: grey 1px 1px 3px;
 }
+
 .popular_card_img{
-    width:137px;
-    height:144px;
+    display:flex;
+    flex:2;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
 }
 
-
+.popular_card_description{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin: 5%;
+    flex:2;
+}
 
 
 /* ACTIVITIES */
+#activities{
+    margin:3%;
+}
 
 #activities_list{
     display:flex;
     
 }
+
 .activities_list_card{
-    margin:20px;
+    margin:0% 5% 0% 0%;
+    box-shadow: grey 1px 1px 3px;
+    border-radius: 5%;
 }
+
 .activities_list_card_img{
     width:302px;
     height:444.51px;
-    border-radius: 20px;
-    object-fit: contain;
-    border: 1px solid red;
+    object-fit: cover;
+    border-radius: 5% 5% 0% 0%;
+}
+
+h3, .activities_list_card{
+    margin:5%;
 }
 
 
