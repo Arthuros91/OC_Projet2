@@ -57,6 +57,7 @@ button{
     background-color:#0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+    width:10%;
 }
 
 li{
@@ -81,9 +82,9 @@ li{
 }
 
 #banner_logo{
-    width: 61.09px;
-    height: 19px;
-    margin: 65% 100%;
+    width: 12%;
+    height: 15%;
+    margin: 10% 20%;
 }
 
 #banner_nav{
@@ -93,6 +94,7 @@ li{
 
 #banner_items{
     display:flex;
+    margin:0%;
 }
 
 .banner_item{
@@ -102,6 +104,7 @@ li{
 
 .banner_item:hover{
     border-top: 2px #0065FC solid;
+    color:#0065FC;
 }
 
 
@@ -110,11 +113,11 @@ li{
     /*Search panel */
 
 #search{
-    margin:0px 55px;
+    margin:0% 5%;
 }
 
 #search_title{
-    margin-bottom: 8px;
+    margin-bottom: 0.65%;
 }
 
 #search_form{
@@ -132,60 +135,64 @@ li{
 }
 
 .fa-location-dot{
-    margin:16px 18px 15px 18px;
+    margin:30% 40% ;
     color: black;
 }
 
 
 
 #button_text{
-    margin: 14px 16px;
+    margin: 30% 25% 30% 5%;
 }
 
     /* Filters */
 
 #filter{
     display:flex;
-    flex-direction: row;
     font-family: Raleway-bold;
     font-size:18px;
-    padding:0px;
+
 }
 
 #filter_text{
-    text-align: center;
-    border: 1px solid blue;
+
 }
 
 #filter_title{
     height:21px;
-    margin-top:46px;
-
+    margin-top:6%;
 }
 
 #filter_group_icon{
     display:flex;
     font-size:17px;
-    margin:0px;
-    
+    margin:0%; 
+    width: 100%; 
+
 }
 
 .filter_icon{
-    color:#0065FC;
-    margin:31px;
-    padding-left: 30px;
-    border: 2px grey solid;
-    padding: 14px;
-    border-radius:25px; 
+    display: flex;
+    margin:5% 3%;
+    border: 2px grey solid;   
+    border-radius:25px;
+    width:230px; 
+    height:50px;
 }
 
 .filter_icon:hover{
     background-color:#DEEBFF;
 }
 
+.filter_logo{
+    margin:7% 4% 7% 7%;
+}
+
 .filter_text{
     color:black;
-    margin-left:10px;
+    padding-top: 6.5%;
+    width:100%;
+
 }
 
 .fa-info{
@@ -195,8 +202,8 @@ li{
     border-radius: 100%;
 }
 
-/* LOCATION */
 
+/* LOCATION */
 
 #location{
     display:flex;
@@ -206,6 +213,8 @@ li{
 .the5th{
     color:grey;
 }
+
+
     /* Logement */
 
 #logement{
@@ -284,12 +293,12 @@ li{
 .popular_card{
     display:flex;
     flex-direction: row;
-    flex:1;
     border-radius: 20px;
     padding:1%;
     background-color: white;
     margin:5% 10% 5% 10%;
     box-shadow: grey 1px 1px 5px;
+    height:150px;
 }
 
 
@@ -325,7 +334,7 @@ li{
 }
 
 .activities_list_card{
-    margin:0% 5% 0% 0%;
+    margin-right:3%;
     box-shadow: grey 1px 1px 3px;
     border-radius: 5%;
 }
@@ -345,12 +354,15 @@ li{
 /* FOOTER */
 
 .footer_list{
-
+    width:100%;
+    margin-left: 5%;
+    padding-top:3%;
 }
 
 .footer_nav{
     display:flex;
     flex-direction:column;
+    
     
 }
 
@@ -390,11 +402,24 @@ li{
 
     /* LOCATION */
 
-        
+        #location{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
         /* Hébergement */
         
         /* Popular List */
     
+        #popular_list{
+            display:flex;
+            flex-direction: row;
+            color:blue;
+        }
+        .popular_card{
+            margin:0%;
+        }
     /* ACTIVITIES */
 
     /* FOOTER */
