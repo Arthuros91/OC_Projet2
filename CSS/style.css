@@ -57,7 +57,7 @@ button{
     background-color:#0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    width:10%;
+    width:126px;
 }
 
 li{
@@ -142,7 +142,7 @@ li{
 
 
 #button_text{
-    margin: 30% 25% 30% 5%;
+    margin: 5%;
 }
 
     /* Filters */
@@ -207,7 +207,8 @@ li{
 
 #location{
     display:flex;
-    align-items: space-between;
+    justify-content: space-around;
+    margin:5% 5%;
 }
 
 .the5th{
@@ -218,34 +219,38 @@ li{
     /* Logement */
 
 #logement{
-    margin:0% 5% 0% 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: space-around;
     background: #F2F2F2;
     border-radius: 20px;
     flex:2;
-}
-
-#logement_title{
-    margin:42px 0px 23px 40px;
-    display:flex;
+    margin-right:3%;
+    padding:3% 3%;
 }
 
 .logement_list{
     display:flex;
-    margin:0px 40px;
+    justify-content: space-around;
+    margin:3% 0%;
+}
+
+#logement_title{
+    margin:0% 2%;
 }
 
 .logement_list_card{
-    width:246px;
-    height:199px;
-    margin:0px 15.5px 30px 0px;
+    height:90%;
+    width:33%;
+    margin-right:5%;
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 25px;
     padding:5px;
     box-shadow: grey 1px 1px 5px ;
 }
 
 .card_img{
-    width: 246px;
+    width: 100%;
     height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -256,7 +261,8 @@ li{
 }
 
 #logement_text{
-    margin:5% 5%;
+    margin:5% 5% 0% 5%;
+    font-family: Raleway-bold;
 }
 
 
@@ -287,7 +293,7 @@ li{
 #popular_list{
     display:flex;
     flex-direction: column;
-    flex:2;
+    justify-content: space-around;
 }
 
 .popular_card{
@@ -296,16 +302,16 @@ li{
     border-radius: 20px;
     padding:1%;
     background-color: white;
-    margin:5% 10% 5% 10%;
+    margin:5% 10%;
     box-shadow: grey 1px 1px 5px;
-    height:150px;
+    height:145px;
 }
 
 
 .popular_card_img{
     display:flex;
     flex:1;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
     object-fit: cover;
     width:40%;
 }
@@ -317,15 +323,13 @@ li{
     flex:2;
 }
 
-.popular_card p {
-    margin: 5% 0% 5% 0%;
+.popular_card .stars_group{
+    margin-top: 30%;
 }
-
-
 /* ACTIVITIES */
 
 #activities{
-    margin:3%;
+    margin:5%;
 }
 
 #activities_list{
@@ -383,18 +387,21 @@ li{
     src: url(Raleway-Bold.ttf) format('truetype');
 }
 
+
+
 /* MEDIA QUERIES */
 
+    
     /* Tablets */ 
 
 @media screen and (min-width:768px) and (max-width:991px) {
     
     /* GENERAL IDENTIFIERS */
     
-    header{
-        color:red;
+        header{
+            color:red;
         
-    }
+        }
 
     /* HEADER */
 
@@ -402,24 +409,48 @@ li{
 
     /* LOCATION */
 
-        #location{
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        /* Hébergement */
+    #location{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
         
-        /* Popular List */
+        }
     
-        #popular_list{
-            display:flex;
-            flex-direction: row;
-            color:blue;
-        }
-        .popular_card{
-            margin:0%;
-        }
+        /* Hébergement */
+    
+    #logement{
+        width:100%;
+    }
+    .logement_list{
+        display: flex;
+        justify-content: space-around;
+    }
+        /* Popular List */
+        
+    #popular{
+        margin:5%; 
+        width:100%;   
+    }
+
+    #popular_title_box{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    #popular_list{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;   
+    }
+
+    .popular_card{
+        margin:1%;
+        height:150px;
+        width:246px;
+
+    }
+    
     /* ACTIVITIES */
 
     /* FOOTER */
@@ -444,10 +475,10 @@ li{
         
         /* Hébergement */
     
-        .logement_list{
-            display: flex;
-            flex-direction:column;
-        }
+    .logement_list{
+        display: flex;
+        flex-direction:column;
+    }
     
         /* Popular List */
     
