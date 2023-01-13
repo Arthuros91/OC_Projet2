@@ -3,7 +3,10 @@
 body{
     max-width: 1400px;
     font-family: Raleway;
-    margin: 0%;
+    margin: 0% 1%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 footer{
@@ -47,7 +50,7 @@ input{
     border: 1px #F2F2F2 solid;
 }
 
-quote{
+#search p{
     font-size:16px;
 }
 
@@ -104,7 +107,7 @@ li{
 
 .banner_item:hover{
     border-top: 2px #0065FC solid;
-    color:#0065FC;
+    color: #0065FC; 
 }
 
 
@@ -197,7 +200,7 @@ li{
 
 .fa-info{
     padding: 5px 10px;
-    margin:0px 11px 37px 0px;
+    margin-right: 11px;
     border: 1px grey solid;
     border-radius: 100%;
 }
@@ -221,7 +224,6 @@ li{
 #logement{
     display:flex;
     flex-direction: column;
-    align-items: space-around;
     background: #F2F2F2;
     border-radius: 20px;
     flex:2;
@@ -246,7 +248,7 @@ li{
     background: #FFFFFF;
     border-radius: 25px;
     padding:5px;
-    box-shadow: grey 1px 1px 5px ;
+    box-shadow: grey 1px 1px 20px ;
 }
 
 .card_img{
@@ -303,7 +305,7 @@ li{
     padding:1%;
     background-color: white;
     margin:5% 10%;
-    box-shadow: grey 1px 1px 5px;
+    box-shadow: grey 1px 1px 20px;
     height:145px;
 }
 
@@ -329,29 +331,39 @@ li{
 /* ACTIVITIES */
 
 #activities{
-    margin:5%;
+    margin:0% 0% 5% 5%;
 }
 
 #activities_list{
     display:flex;
+    width:100%;
+    height: 400px;
     
 }
 
 .activities_list_card{
     margin-right:3%;
-    box-shadow: grey 1px 1px 3px;
+    box-shadow: grey 0px 3px 15px;
     border-radius: 5%;
+    width:33%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 .activities_list_card_img{
-    width:302px;
-    height:444.51px;
+    width:100%;
+    height:90%;
     object-fit: cover;
     border-radius: 5% 5% 0% 0%;
 }
 
 .activities_list_card h3 {
-    margin:5%;
+    margin-bottom: 4%;
 }
 
 
@@ -398,10 +410,7 @@ li{
     
     /* GENERAL IDENTIFIERS */
     
-        header{
-            color:red;
         
-        }
 
     /* HEADER */
 
@@ -429,19 +438,22 @@ li{
         /* Popular List */
         
     #popular{
-        margin:5%; 
-        width:100%;   
+        width:100%;
+        margin-top: 5%;
+        padding:0% 5% 5% 0%;   
     }
 
     #popular_title_box{
         display: flex;
         justify-content:space-between;
+        align-items: center;
     }
 
     #popular_list{
         display:flex;
         flex-direction: row;
-        justify-content: space-around;   
+        justify-content: space-around;       
+        width:100%;  
     }
 
     .popular_card{
@@ -453,6 +465,20 @@ li{
     
     /* ACTIVITIES */
 
+    #activities_list{
+        height:265px;
+    }
+
+    .activities_list_card{
+        height:100%;
+    }
+
+    .activities_list_card_img{
+        height:85%;
+    }
+    .activities_list_card h3 {
+        margin-bottom: 0%;
+    }
     /* FOOTER */
 
 
