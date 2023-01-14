@@ -23,6 +23,9 @@ nav{
     color:#0065FC;
 }
 
+.the5th{
+    color:#F2F2F2;
+}
 /* HEADER */
 
 header{
@@ -225,7 +228,7 @@ button{
     
 #popular_title_box{
     display:flex;
-    flex:1;
+    justify-content: space-between;
 }
     
 #popular_title{    
@@ -236,7 +239,7 @@ button{
     color:#0065FC;
     width:18px;
     height:15.75px;
-    margin:25px;
+    margin:47px 25px 0px 0px;
 }
     
 #popular_list{
@@ -314,14 +317,63 @@ button{
     /* PANEL_SEARCH */
         /*Search Form */
         /*Filter*/
+    
     .filter_icon{
         margin:2%;
     }
+
+
     /* LOCATION */
+    
+    #location{
+        flex-direction: column;
+    }
 
         /* Hébergement */
+    
+    #logement{
+        width:96%;
+        height:600px;
+        padding: 0%;
+        padding-left: 5%;
+        
+    }
+
+    .logement_list{
+        margin:2% 0%;
+    }
+
+
 
         /* Popular List */
+    
+    #popular{
+        margin: 5% 0%;
+        width:100%;
+    }
+
+    #popular_list{
+        flex-direction: row;
+        padding:0% 2%;
+    }
+
+    .popular_card{
+        margin:5% 1%;
+        width:30%;
+        padding:0.5%;
+    }
+
+    .popular_card h3{
+        font-size:14px;
+    }
+
+    .popular_card p{
+        font-size: 13px;
+    }
+
+    .popular_card .stars_group{
+        margin-top: 25%;
+    }
 
     /* ACTIVITIES */
 
@@ -368,10 +420,6 @@ button{
 
     }
 
-    .banner_item{
-        
-    }
-
     .banner_item:hover{
         color:#0065FC;
         
@@ -387,34 +435,79 @@ button{
     #search{
         margin:5%
     }
+
         /*Search Form */
+
+
     #search_form{
         margin:5% 0%;
     }
+
         /*Filter*/
+    
     #filter{
         display:flex;
         flex-direction: column;
     }
+
     #filter_group_icon{
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0%;
     }
+
     .filter_icon{
         margin:5% 0%;
         width: 40%;
     }
+
+
     /* LOCATION */
 
     #location{
-        margin: 5%;
+        margin: 0%;
+        flex-direction: column;
+
     
     }
+
         /* Hébergement */
     
-        /* Popular List */
+    #logement{
+        padding:0%;
+        background-color: white;
+    }
+    #logement_title{
+        margin:5% 5%;
+    }
+    .logement_list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height:700px;
+    }
+    .logement_list_card{
+        width:90%;
+        height:200px;
+        margin:0%;
+    }
+    #logement_text{
+        display:none;
+    }
 
+        /* Popular List */
+    
+    #popular{
+        margin: 5% 0%;
+        border-radius: 0%;
+    }
+    #popular_title{
+        margin:10% 5%;
+    }
+
+    .popular_card{
+        margin:3% 5%;
+    }
     /* ACTIVITIES */
 
     /* FOOTER */
