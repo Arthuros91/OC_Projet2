@@ -87,10 +87,13 @@ header{
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-location-dot{
-    margin:30% 40% ;
+    
     color: black;
 }
 
@@ -285,7 +288,7 @@ button{
 /* ACTIVITIES */
 
 #activities{
-    
+    margin: 5% 0%    
 }
 
 #activities_list{
@@ -299,6 +302,7 @@ button{
     height:100%;
     width:23%;
     border:#F2F2F2 2px solid;
+    box-shadow: grey 1px 1px 20px;
     border-radius: 25px;
 }
 
@@ -315,6 +319,32 @@ button{
 
 /* FOOTER */
 
+footer{
+    background-color:#F2F2F2;
+    height: 225px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin: 3% 0% 3% 5%;
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+.footer_list h2{
+    font-size: 18px;   
+}
+
+.footer_list a{
+    margin:2% 0%;
+}
 
 /* POLICE */
 
@@ -340,9 +370,7 @@ button{
     /* GENERAL IDENTIFIERS */
 
     /* HEADER */
-    a{
-        color:red;
-    }
+
     /* PANEL_SEARCH */
         /*Search Form */
         /*Filter*/
@@ -517,8 +545,6 @@ button{
     #location{
         margin: 0%;
         flex-direction: column;
-
-    
     }
 
         /* Hébergement */
@@ -528,20 +554,24 @@ button{
         background-color: white;
         order:2;
     }
+
     #logement_title{
         margin:5% 5%;
     }
+
     .logement_list{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height:700px;
     }
+
     .logement_list_card{
         width:90%;
         height:200px;
         margin:0%;
     }
+
     #logement_text{
         display:none;
     }
@@ -560,6 +590,8 @@ button{
     .popular_card{
         margin:3% 5%;
     }
+
+
     /* ACTIVITIES */
 
     #activities_list{
@@ -583,7 +615,12 @@ button{
     .activities_list_card h3{
         margin:3%;    
     }
-    
+
     /* FOOTER */
+
+    footer{
+        flex-direction: column;
+        height:550px;
+    }
 
 }
