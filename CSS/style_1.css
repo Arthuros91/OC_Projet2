@@ -155,13 +155,129 @@ button{
     border-radius: 100%;
 }
 /* LOCATION */
+    
+#location{
+    display: flex;
+    margin:5% 0%;
+}
+
 
     /* Hébergement */
-    #logement{
-        background-color:#F2F2F2;
-        border-radius: 20px;
-    }
+
+#logement{
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex:2;
+    padding: 0% 3%;
+    
+    
+}
+.logement_list{
+    display: flex;
+    
+}
+
+.logement_list_card{
+    height:95%;
+    width:33%;
+    margin-right:5%;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding:5px;
+    box-shadow: grey 1px 1px 20px ;
+}
+    
+.card_img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card_text{
+    margin: 0% 3%
+}
+
+.card_text h3{
+    margin:0%;
+    font-size: 16px;
+}
+
+.card_text p{
+    margin: 2% 0% 0% 0%;
+    font-size: 14px;
+}
+
+#logement_text{
+    font-family: Raleway-bold;
+}
     /* Popular List */
+
+#popular{
+    flex:1;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin:0% 2%;
+}
+    
+#popular_title_box{
+    display:flex;
+    flex:1;
+}
+    
+#popular_title{    
+    margin: 41px 0px 26px 37px;   
+}
+    
+.fa-chart-line{
+    color:#0065FC;
+    width:18px;
+    height:15.75px;
+    margin:25px;
+}
+    
+#popular_list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    
+.popular_card{
+    display:flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding:1%;
+    background-color: white;
+    margin:5% 10%;
+    box-shadow: grey 1px 1px 20px;
+    height:145px;
+}
+    
+.popular_card_img{
+    display:flex;
+    flex:1;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    width:40%;
+}
+    
+.popular_card_description{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+    flex:2;
+}
+
+.popular_card_description h3{
+    margin:0%;
+}
+.popular_card .stars_group{
+    margin-top: 8%;
+}
+
 
 /* ACTIVITIES */
 
