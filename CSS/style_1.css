@@ -1,0 +1,195 @@
+/* GENERAL IDENTIFIERS */
+
+body{
+    max-width: 1400px;
+    font-family: Raleway;
+    margin:0% 5%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    font-size: 16px;
+}
+
+
+/* HEADER */
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100px;
+}
+
+#banner_logo{
+    height:20px;
+    align-items: center;
+}
+
+#banner_nav {
+    width:30%;
+    align-items: flex-end;
+}
+
+#banner_items{
+    display:flex;
+    margin:0% 5%;     
+}
+
+.banner_item{
+    margin:0% 5%;
+    padding-top: 58px;
+    height: 40px;
+}
+
+.banner_item:hover{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;   
+}
+
+
+/* PANEL_SEARCH */
+
+#search_title{
+    margin-bottom: 0.5%;
+}
+
+#search_quote{
+    margin-top: 0.5%;
+}
+
+#search_form{
+    display:flex;
+}
+
+
+/* LOCATION */
+
+    /* Hébergement */
+
+    /* Popular List */
+
+/* ACTIVITIES */
+
+/* FOOTER */
+
+
+/* POLICE */
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-bold;
+    src: url(Raleway-Bold.ttf) format('truetype');
+}
+
+
+
+/* MEDIA QUERIES */
+
+    
+    /* Tablets */ 
+
+@media screen and (min-device-width:768px) and (max-device-width:991px) {
+    
+    /* GENERAL IDENTIFIERS */
+
+    /* HEADER */
+
+    /* PANEL_SEARCH */
+
+    /* LOCATION */
+
+        /* Hébergement */
+
+        /* Popular List */
+
+    /* ACTIVITIES */
+
+    /* FOOTER */
+
+}
+
+
+
+
+
+
+/* Phones */
+
+
+@media screen and (max-device-width:767px) {
+    
+    /* GENERAL IDENTIFIERS */
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin:0%;
+    
+    }
+    /* HEADER */
+
+    header{
+        display:flex;
+        flex-direction: column;
+        height:150px;
+
+    }
+
+    #banner_nav{
+        width:100%;
+        border-bottom: #F2F2F2 3px solid;
+    }
+
+    #banner_items{
+        margin: 0% 5%;
+        justify-content: space-between;
+        padding: 0%;
+
+    }
+
+    .banner_item{
+        
+    }
+
+    .banner_item:hover{
+        color:#0065FC;
+        
+    }
+
+    .banner_item:focus{
+        border-bottom: 2px solid #0065FC;
+    }
+
+    
+    /* PANEL_SEARCH */
+
+    #search{
+        margin:5%
+    }
+
+    /* LOCATION */
+
+        /* Hébergement */
+
+        /* Popular List */
+
+    /* ACTIVITIES */
+
+    /* FOOTER */
+
+}

@@ -227,14 +227,15 @@ li{
     background: #F2F2F2;
     border-radius: 20px;
     flex:2;
-    margin-right:3%;
-    padding:3% 3%;
+    
+    
 }
 
 .logement_list{
     display:flex;
     justify-content: space-around;
     margin:3% 0%;
+    width:95%;
 }
 
 #logement_title{
@@ -425,20 +426,26 @@ li{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
-        color:red;
+        align-items: center;
+        width:90%;
+        
         }
     
         /* Hébergement */
     
     #logement{
         width:100%;
+        margin:0% 5%;
     }
 
     .logement_list{
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .logement_list_card{
+        height: 200px;
     }
         /* Popular List */
         
