@@ -284,6 +284,35 @@ button{
 
 /* ACTIVITIES */
 
+#activities{
+    
+}
+
+#activities_list{
+    display:flex;
+    justify-content: space-between;
+    height: 550px;
+    width:100%;
+}
+
+.activities_list_card{
+    height:100%;
+    width:23%;
+    border:#F2F2F2 2px solid;
+    border-radius: 25px;
+}
+
+.activities_list_card_img{
+    object-fit: cover;
+    height:88%;
+    width:100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activities_list_card h3{
+    margin:5% 5%;
+}
+
 /* FOOTER */
 
 
@@ -377,6 +406,27 @@ button{
 
     /* ACTIVITIES */
 
+    #activities_list{
+        height:400px;
+    }
+
+    .activities_list_card{
+        height:270px;
+        width:23%;
+        border:#F2F2F2 2px solid;
+        border-radius: 25px;
+    }
+    
+    .activities_list_card_img{
+    
+        height:78%;
+        width:100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .activities_list_card h3{
+        margin:4% 5%;
+    }
     /* FOOTER */
 
 }
@@ -476,6 +526,7 @@ button{
     #logement{
         padding:0%;
         background-color: white;
+        order:2;
     }
     #logement_title{
         margin:5% 5%;
@@ -500,6 +551,7 @@ button{
     #popular{
         margin: 5% 0%;
         border-radius: 0%;
+        order: 1;
     }
     #popular_title{
         margin:10% 5%;
@@ -510,6 +562,28 @@ button{
     }
     /* ACTIVITIES */
 
+    #activities_list{
+        flex-direction: column;
+        align-items: center;
+        height:1100px;
+    }
+    
+    .activities_list_card{
+        width:90%;
+        height:250px;
+    }
+    
+    .activities_list_card_img{
+        height:60%;
+    }
+    
+    #activities h1{
+        margin: 5%;
+    }
+    .activities_list_card h3{
+        margin:3%;    
+    }
+    
     /* FOOTER */
 
 }
