@@ -19,6 +19,9 @@ nav{
     font-size: 16px;
 }
 
+.fa-solid{
+    color:#0065FC;
+}
 
 /* HEADER */
 
@@ -68,15 +71,96 @@ header{
     margin-top: 0.5%;
 }
 
+    /*Search Form */
+
 #search_form{
     display:flex;
+    margin:2% 0%;
 }
 
+#search_icon{
+    width:50px;
+    height:49px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
 
+.fa-location-dot{
+    margin:30% 40% ;
+    color: black;
+}
+
+input{
+    font-family: Raleway-bold;
+    font-size:18px;
+    height: 100%;
+    border: 1px #F2F2F2 solid;
+}
+
+button{
+    font-size:18px;
+    color:white;
+    background-color:#0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    width:126px;
+}
+
+    /*Filter*/
+
+#filter{
+    font-family: Raleway-bold;
+    display: flex;
+}
+
+#filter_title{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#filter_group_icon{
+    display:flex;
+    /*justify-content: space-around;*/
+    font-size:17px;
+    margin:0%; 
+    width: 100%; 
+}
+
+.filter_icon{
+    width:30%;
+    height: 40px;
+    border: 1px #D9D9D9 solid;
+    border-radius: 25px;
+    margin: 0% 4%;
+    padding: 0.5% 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter_icon:hover{
+    background-color:#DEEBFF;
+}
+
+.filter_text{
+    margin:5% 5%;  
+}
+
+.fa-info{
+    padding: 5px 10px;
+    margin-right: 11px;
+    border: 1px grey solid;
+    border-radius: 100%;
+}
 /* LOCATION */
 
     /* Hébergement */
-
+    #logement{
+        background-color:#F2F2F2;
+        border-radius: 20px;
+    }
     /* Popular List */
 
 /* ACTIVITIES */
@@ -108,9 +192,15 @@ header{
     /* GENERAL IDENTIFIERS */
 
     /* HEADER */
-
+    a{
+        color:red;
+    }
     /* PANEL_SEARCH */
-
+        /*Search Form */
+        /*Filter*/
+    .filter_icon{
+        margin:2%;
+    }
     /* LOCATION */
 
         /* Hébergement */
@@ -175,17 +265,38 @@ header{
         border-bottom: 2px solid #0065FC;
     }
 
-    
+
     /* PANEL_SEARCH */
 
     #search{
         margin:5%
     }
-
+        /*Search Form */
+    #search_form{
+        margin:5% 0%;
+    }
+        /*Filter*/
+    #filter{
+        display:flex;
+        flex-direction: column;
+    }
+    #filter_group_icon{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0%;
+    }
+    .filter_icon{
+        margin:5% 0%;
+        width: 40%;
+    }
     /* LOCATION */
 
+    #location{
+        margin: 5%;
+    
+    }
         /* Hébergement */
-
+    
         /* Popular List */
 
     /* ACTIVITIES */
