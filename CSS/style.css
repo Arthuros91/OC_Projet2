@@ -372,13 +372,9 @@ footer{
     /* Tablets */ 
 
 @media screen and (min-device-width:768px) and (max-device-width:991px) {
-    
-    /* GENERAL IDENTIFIERS */
-
-    /* HEADER */
 
     /* PANEL_SEARCH */
-        /*Search Form */
+
         /*Filter*/
     
     .filter_icon{
@@ -462,13 +458,13 @@ footer{
     }
 
 
-    /* FOOTER */
+
 
 }
 
 
 
-    /* Phones */
+    /* Mobiles */
 
 @media screen and (max-device-width:767px) {
     
@@ -496,7 +492,6 @@ footer{
 
     #banner_items{
         margin: 0% 0%;
-        /*justify-content: space-between;*/
         padding: 0%;
         width:100%;
     }
@@ -608,11 +603,11 @@ footer{
     
     .activities_list_card{
         width:90%;
-        height:250px;
+        height: 20%;
     }
     
     .activities_list_card_img{
-        height:60%;
+        height:70%;
     }
     
     #activities h1{
