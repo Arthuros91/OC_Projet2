@@ -521,6 +521,10 @@ footer{
         margin:5% 0%;
     }
 
+    form{
+        width:175px;
+    }
+
         /*Filter*/
     
     #filter{
