@@ -373,6 +373,12 @@ footer{
 
 @media screen and (min-device-width:768px) and (max-device-width:991px) {
 
+/* HEADER */
+
+.banner_item:hover{
+    color:#0065FC;        
+}
+
     /* PANEL_SEARCH */
 
         /*Filter*/
@@ -397,7 +403,7 @@ footer{
         padding-left: 5%;
         
     }
-
+    
     .logement_list{
         margin:2% 0%;
     }
