@@ -1,9 +1,15 @@
 /* GENERAL IDENTIFIERS */
+html{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 body{
     max-width: 1400px;
     font-family: Raleway;
     margin:0% 5%;
+
 }
 
 a{
@@ -371,7 +377,7 @@ footer{
     
     /* Tablets */ 
 
-@media screen and (min-device-width:768px) and (max-device-width:991px) {
+@media screen and (min-width:768px) and (max-width:991px) {
 
 /* HEADER */
 
@@ -472,7 +478,7 @@ footer{
 
     /* Mobiles */
 
-@media screen and (max-device-width:767px) {
+@media screen and (max-width:767px) {
     
     /* GENERAL IDENTIFIERS */
     body{
