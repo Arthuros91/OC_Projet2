@@ -1,13 +1,15 @@
 /* GENERAL IDENTIFIERS */
+
 html{
     display:flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 body{
     max-width: 1400px;
-    font-family: Raleway;
+    font-family: serif;
     margin:0% 5%;
 
 }
@@ -52,18 +54,21 @@ header{
 
 #banner_nav {
     width:30%;
-    align-items: flex-end;
+    display: flex;
+
 }
 
 #banner_items{
     display:flex;
-    margin:0% 5%;     
+    align-items: center;
+    justify-content: space-between;
+   
 }
 
 .banner_item{
-    margin:0% 5%;
     padding-top: 58px;
     height: 40px;
+    width:100%;
 }
 
 .banner_item:hover{
@@ -106,7 +111,6 @@ header{
 }
 
 input{
-    font-family: Raleway-bold;
     font-size:18px;
     height: 100%;
     border: 1px #F2F2F2 solid;
@@ -124,7 +128,6 @@ button{
     /*Filter*/
 
 #filter{
-    font-family: Raleway-bold;
     display: flex;
 }
 
@@ -224,7 +227,7 @@ button{
 }
 
 #logement_text{
-    font-family: Raleway-bold;
+    font-weight: 700;
 }
 
     /* Popular List */
@@ -358,16 +361,17 @@ footer{
 
 
 
-/* POLICE */
+/* POLICE */ 
 
 @font-face {
     font-family: Raleway;
-    src: url(Raleway-VariableFont_wght.ttf) format('truetype');
+    src: url("https://fonts.googleapis.com/css2?family=Raleway");
+    font-weight: normal;
 }
 
 @font-face {
     font-family: Raleway-bold;
-    src: url(Raleway-Bold.ttf) format('truetype');
+    src: url();
 }
 
 
@@ -506,19 +510,21 @@ footer{
         margin: 0% 0%;
         padding: 0%;
         width:100%;
+        justify-content: center;
     }
 
     .banner_item{
         padding:0% 15%;
         margin:0%;
     }
+
     .banner_item:hover{
-        color:#0065FC;        
+        color:#0065FC; 
+        border-top:none;
+        border-bottom: 2px solid #0065FC;       
     }
 
-    .blue{
-        border-bottom: 2px solid #0065FC;
-    }
+    
 
 
     /* PANEL_SEARCH */
