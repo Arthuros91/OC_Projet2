@@ -9,7 +9,7 @@ html{
 
 body{
     max-width: 1400px;
-    font-family: serif;
+    font-family: 'Raleway';
     margin:0% 5%;
 
 }
@@ -42,33 +42,34 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width:100%;
-    height:100px;
+    height:60px;
+}
+
+#logo{
+    margin:0%;
 }
 
 #banner_logo{
     height:20px;
-    align-items: center;
-}
-
-#banner_nav {
-    width:30%;
-    display: flex;
 
 }
 
 #banner_items{
     display:flex;
-    align-items: center;
     justify-content: space-between;
-   
+
+    width:25%;
+    margin: 0%;
+    font-size: 17px;
+
 }
 
 .banner_item{
-    padding-top: 58px;
-    height: 40px;
     width:100%;
+    margin:0% 5%;
+    padding-top:11.1%;
 }
 
 .banner_item:hover{
@@ -106,7 +107,6 @@ header{
 }
 
 .fa-location-dot{
-    
     color: black;
 }
 
@@ -125,6 +125,7 @@ button{
     width:126px;
 }
 
+
     /*Filter*/
 
 #filter{
@@ -139,21 +140,25 @@ button{
 
 #filter_group_icon{
     display:flex;
+
     font-size:17px;
     margin:0%; 
-    width: 100%; 
+    width: 80%; 
 }
 
 .filter_icon{
-    width:30%;
+
     height: 40px;
     border: 1px #D9D9D9 solid;
     border-radius: 25px;
-    margin: 0% 4%;
-    padding: 0.5% 0.5%;
+    padding: 0.5% 2%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow:visible;
+    margin: 0% 2% ;
+    
 }
 
 .filter_icon:hover{
@@ -161,7 +166,7 @@ button{
 }
 
 .filter_text{
-    margin:5% 5%;  
+    margin:5% 1% 5% 5%;  
 }
 
 .fa-info{
@@ -186,43 +191,55 @@ button{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     flex:2;
-    padding: 0% 3%;   
+    padding: 0% 2%;
+      
 }
 
 .logement_list{
-    display: flex;    
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:3% 0%;
+       
 }
 
 .logement_list_card{
-    height:95%;
-    width:33%;
-    margin-right:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:31.5%;
     background: #FFFFFF;
     border-radius: 25px;
-    padding:5px;
+    padding:4px;
     box-shadow: grey 1px 1px 20px ;
 }
     
 .card_img{
     width: 100%;
-    height: 124px;
+    height: 115px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card_text{
-    margin: 0% 3%
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0% 3%;
+    
 }
 
 .card_text h3{
     margin:0%;
     font-size: 16px;
+    overflow:visible;
 }
 
 .card_text p{
-    margin: 2% 0% 0% 0%;
+    margin: 0%;
     font-size: 14px;
 }
 
@@ -234,40 +251,50 @@ button{
 
 #popular{
     flex:1;
+    display: flex;
+    flex-direction: column;
     background: #F2F2F2;
     border-radius: 20px;
     margin:0% 2%;
+    justify-content: space-around;
 }
     
 #popular_title_box{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5% 5%;
+
 }
     
 #popular_title{    
-    margin: 41px 0px 26px 37px;   
+       margin: 0%;
 }
     
 .fa-chart-line{
     color:#0065FC;
     width:18px;
     height:15.75px;
-    margin:47px 25px 0px 0px;
+
 }
     
 #popular_list{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    
 }
     
 .popular_card{
     display:flex;
     flex-direction: row;
+    width:85%;
+    margin:2% 0%;
     border-radius: 20px;
     padding:1%;
     background-color: white;
-    margin:5% 10%;
+    
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height:145px;
 }
@@ -283,17 +310,18 @@ button{
 .popular_card_description{
     display: flex;
     flex-direction: column;
-    margin: 3% 5%;
-    flex:2;
+    padding: 3% 5%;
+    justify-content: space-around;
+    height:125px;
 }
 
 .popular_card_description h3{
     margin:0%;
 }
+ .popular_card p{
+    margin:0%;
+ }
 
-.popular_card .stars_group{
-    margin-top: 8%;
-}
 
 
 /* ACTIVITIES */
@@ -306,7 +334,7 @@ button{
     display:flex;
     justify-content: space-between;
     height: 550px;
-    width:100%;
+    width:98%;
 }
 
 .activities_list_card{
@@ -498,9 +526,14 @@ footer{
     header{
         display:flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         height:150px;
     }
-
+    #logo{
+        justify-content: center;
+        align-items: center;
+    }
     #banner_nav{
         width:100%;
         border-bottom: #F2F2F2 3px solid;
