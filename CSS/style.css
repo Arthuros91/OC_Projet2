@@ -13,6 +13,9 @@ body{
     margin:0% 5%;
 
 }
+h1{
+    font-size: 22px;
+}
 
 a{
     text-decoration: none;
@@ -134,14 +137,16 @@ button{
 
 #filter_title{
     font-size: 18px;
+    font-weight: bold;
     display: flex;
     align-items: center;
 }
 
 #filter_group_icon{
     display:flex;
-
-    font-size:17px;
+    justify-content: space-around;
+    font-size: 17px;
+    font-weight: bold;
     margin:0%; 
     width: 80%; 
 }
@@ -153,11 +158,9 @@ button{
     border-radius: 25px;
     padding: 0.5% 2%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow:visible;
-    margin: 0% 2% ;
+
     
 }
 
@@ -166,7 +169,8 @@ button{
 }
 
 .filter_text{
-    margin:5% 1% 5% 5%;  
+    margin:5% 1% 5% 5%;
+    white-space: nowrap;  
 }
 
 .fa-info{
@@ -192,8 +196,17 @@ button{
     display: flex;
     flex-direction: column;
     flex:2;
-    padding: 0% 2%;
+    align-items: center;
+
       
+}
+#logement_title{
+    align-self: flex-start;
+    margin:4% 0% 2% 5%;
+}
+
+#logement_box{
+    width:95%;
 }
 
 .logement_list{
@@ -208,7 +221,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width:31.5%;
+    width:30%;
     background: #FFFFFF;
     border-radius: 25px;
     padding:4px;
@@ -244,7 +257,10 @@ button{
 }
 
 #logement_text{
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin: 5%;
 }
 
     /* Popular List */
@@ -256,19 +272,19 @@ button{
     background: #F2F2F2;
     border-radius: 20px;
     margin:0% 2%;
-    justify-content: space-around;
+    
 }
     
 #popular_title_box{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5%;
+    padding: 5%;
 
 }
     
 #popular_title{    
-       margin: 0%;
+    margin:4% 0% 2% 5%;
 }
     
 .fa-chart-line{
@@ -288,13 +304,11 @@ button{
     
 .popular_card{
     display:flex;
-    flex-direction: row;
     width:85%;
-    margin:2% 0%;
+    margin-bottom: 3%;
     border-radius: 20px;
     padding:1%;
     background-color: white;
-    
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height:145px;
 }
@@ -335,25 +349,39 @@ button{
     justify-content: space-between;
     height: 550px;
     width:98%;
+    margin-top: 2%;
 }
 
 .activities_list_card{
     height:100%;
     width:23%;
-    border:#F2F2F2 2px solid;
-    box-shadow: grey 1px 1px 20px;
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .activities_list_card_img{
     object-fit: cover;
-    height:88%;
+    height:80%;
     width:100%;
     border-radius: 25px 25px 0px 0px;
 }
 
-.activities_list_card h3{
-    margin:5% 5%;
+.activities_list_card_title{
+    width: 98%;
+    border:#F2F2F2 1px solid;
+    border-top: none;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: grey 0px 0px 20px;
+    padding-top: 7%;
+    height:60px;
+}
+
+.activities_list_card h3{ 
+    margin:0% 5%;
+    width: 95%;
 }
 
 
@@ -388,22 +416,6 @@ footer{
 }
 
 
-
-/* POLICE */ 
-
-@font-face {
-    font-family: Raleway;
-    src: url("https://fonts.googleapis.com/css2?family=Raleway");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Raleway-bold;
-    src: url();
-}
-
-
-
 /* MEDIA QUERIES */
 
     
@@ -412,18 +424,30 @@ footer{
 @media screen and (min-width:768px) and (max-width:991px) {
 
 /* HEADER */
+header{
+    justify-content: space-between;
+}
+#banner_items{
+    padding:0%;
+    width:40%;
+    height: 100%;
+}
 
 .banner_item:hover{
     color:#0065FC;        
 }
 
     /* PANEL_SEARCH */
-
-        /*Filter*/
-    
-    .filter_icon{
-        margin:2%;
+    #search{
+        width:100%;
     }
+        /*Filter*/
+    #filter_group_icon{
+        padding:0%;
+        width:100%;
+        justify-content: space-between;
+    }
+
 
 
     /* LOCATION */
@@ -435,13 +459,13 @@ footer{
         /* Hébergement */
     
     #logement{
-        width:96%;
+        width:100%;
         height:600px;
-        padding: 0%;
-        padding-left: 5%;
-        
+        padding: 0%;  
     }
-    
+    #logement_box{
+        width:90%;
+    }
     .logement_list{
         margin:2% 0%;
     }
@@ -452,10 +476,18 @@ footer{
         margin: 5% 0%;
         width:100%;
     }
-
+    #popular_title_box{
+        padding: 0%;
+        padding-right: 5%;
+    }
+    .fa-chart-line{
+        margin-top: 1.5%;
+    
+    }
     #popular_list{
         flex-direction: row;
-        padding:0% 2%;
+        width:93%;
+        align-self: center;
     }
 
     .popular_card{
@@ -480,28 +512,20 @@ footer{
     /* ACTIVITIES */
 
     #activities_list{
-        height:400px;
+        height: auto;
     }
-
     .activities_list_card{
-        height:270px;
         width:23%;
-        border:#F2F2F2 2px solid;
+        height: 70%;
         border-radius: 25px;
     }
     
     .activities_list_card_img{
-    
-        height:78%;
+        
+        height:210px;
         width:100%;
         border-radius: 25px 25px 0px 0px;
     }
-    
-    .activities_list_card h3{
-        margin:4% 5%;
-    }
-
-
 
 
 }
@@ -547,7 +571,7 @@ footer{
     }
 
     .banner_item{
-        padding:0% 15%;
+        padding:5% 15%;
         margin:0%;
     }
 
@@ -563,7 +587,8 @@ footer{
     /* PANEL_SEARCH */
 
     #search{
-        margin:5%
+        align-items: center;
+        padding:4%;
     }
 
         /*Search Form */
@@ -585,13 +610,19 @@ footer{
 
     #filter_group_icon{
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
         padding: 0%;
+        font-size: 17px;
     }
 
     .filter_icon{
-        margin:5% 0%;
-        width: 40%;
+        padding: 0% 4%;
+        margin: 3% 2% 3% 0%;
+        width:35%;
+        height:50px;
+        justify-content: flex-start;
     }
 
 
@@ -600,6 +631,7 @@ footer{
     #location{
         margin: 0%;
         flex-direction: column;
+        width: 100%;
     }
 
         /* Hébergement */
@@ -608,23 +640,37 @@ footer{
         padding:0%;
         background-color: white;
         order:2;
-    }
 
+    }
+    
     #logement_title{
         margin:5% 5%;
     }
 
+    #logement_box{
+        width:100%;
+    }
+
     .logement_list{
         flex-direction: column;
-        align-items: center;
         justify-content: space-around;
+        align-items: center;
         height:700px;
+
     }
 
     .logement_list_card{
-        width:90%;
+        width:85%;
         height:200px;
-        margin:0%;
+        margin:3% 4%;
+        padding:0.7% 1%;
+        border-radius: 30px ;
+        justify-content: space-between;
+    }
+
+    .card_img{
+        border-radius: 25px 25px 0px 0px;
+        
     }
 
     #logement_text{
@@ -639,10 +685,6 @@ footer{
         order: 1;
     }
 
-    #popular_title{
-        margin:10% 5%;
-    }
-
     .popular_card{
         margin:3% 5%;
     }
@@ -650,27 +692,49 @@ footer{
 
     /* ACTIVITIES */
 
+    #activities{
+        align-items: center;
+        margin: 0%;
+        margin-bottom: 5%;
+    }
+
+    #activities h1{
+        margin: 5%;
+    }
+
     #activities_list{
         flex-direction: column;
         align-items: center;
         height:1100px;
+        margin: 0%;
+        width:100%;
     }
     
     .activities_list_card{
-        width:90%;
-        height: 20%;
+        width:85%;
+        height: 200px;
+        padding:0.5% ;
+        border-radius: 30px;
+        margin:3% 5%;
+        
     }
     
     .activities_list_card_img{
         height:70%;
+        border-radius: 25px 25px 0px 0px;
     }
     
-    #activities h1{
-        margin: 5%;
+
+    .activities_list_card_title{
+        height: 50px;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
     }
-    
+
     .activities_list_card h3{
-        margin:3%;    
+        font-size: 16px;    
+
     }
 
     /* FOOTER */
@@ -680,4 +744,15 @@ footer{
         height:550px;
     }
 
+}
+
+
+
+@media screen and (max-width: 520px) { 
+    
+    .filter_icon{
+        font-size: 13px;
+        margin-right: 0%;
+        justify-content: center;
+    }
 }
