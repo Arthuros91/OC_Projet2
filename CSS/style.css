@@ -117,6 +117,8 @@ header{
 input{
     font-size:18px;
     height: 100%;
+    font-family: 'Raleway';
+    font-weight: 700;
     border: 1px #F2F2F2 solid;
 }
 
