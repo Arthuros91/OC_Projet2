@@ -501,7 +501,7 @@ header{
     }
 
     .popular_card{
-        margin:5% 1%;
+        margin:3% 1% 5% 1%;
         width:30%;
         padding:0.5%;
     }
@@ -547,6 +547,9 @@ header{
 @media screen and (max-width:767px) {
     
     /* GENERAL IDENTIFIERS */
+    html{
+        width: 100%;
+    }
     body{
         display: flex;
         flex-direction: column;
@@ -579,11 +582,11 @@ header{
         margin: 0% 0%;
         padding: 0%;
         width:100%;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .banner_item{
-        padding:5% 19%;
+        padding:5% 10%;
         margin:0%;
     }
 
