@@ -260,6 +260,7 @@ header {
                 .popular_card_img {
                     width: 35%;
                     height: 130px;
+                    object-fit: cover;
                     border-radius: 15px 0 0 15px;
                 }
 
@@ -289,6 +290,7 @@ header {
             width: 100%;
             height: 400px;
             border-radius: 20px 20px 0 0;
+            object-fit: cover;
         }
 
         .activities_list_card_title {
